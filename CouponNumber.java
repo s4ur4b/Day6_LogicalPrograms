@@ -9,7 +9,7 @@ public class CouponNumber {
         //Get user input value of Number of Coupons to be generated
         System.out.println("Enter a Number");
         int number = scan.nextInt();
-        //Passing the user input to ReverseNo function
+        //Passing the user input to randomCoupon function
         randomCoupon(number);
     }
 
