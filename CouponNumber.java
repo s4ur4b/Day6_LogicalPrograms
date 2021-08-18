@@ -15,10 +15,10 @@ public class CouponNumber {
 
     static void randomCoupon(int number) {
         int[] table = new int[0];
-        Random randNum = new Random();
         for (int i = 0; i < number; i++) {
             table = new int[number];
-            table[i] = randNum.nextInt();
+            int couponNumber = (int) ThreadLocalRandom.current().nextInt(1000,9999);
+            table[i] = couponNumber;
             System.out.println(table[i]);
         }
         int len = table.length;
