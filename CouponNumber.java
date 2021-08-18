@@ -14,9 +14,8 @@ public class CouponNumber {
     }
 
     static void randomCoupon(int number) {
-        int[] table = new int[0];
+        int[] table =  new int[number];
         for (int i = 0; i < number; i++) {
-            table = new int[number];
             int couponNumber = (int) ThreadLocalRandom.current().nextInt(1000,9999);
             table[i] = couponNumber;
             System.out.println(table[i]);
